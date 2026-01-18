@@ -1,664 +1,1353 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sanskriti's Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanskriti Shevgaonkar | Neon Sci-Fi + Hand-Drawn Tech</title>
+  <meta name="description" content="A creative portfolio space — LLMs/RAG, CV, security-aware engineering, and production mindset. Work, blueprints, and artifacts." />
 
-	<!-- 
-	//////////////////////////////////////////////////////
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			sanskritishevgaonkar1711@gmail.com
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sanskriti Shevgaonkar | Portfolio" />
+  <meta property="og:description" content="Neon sci-fi + hand-drawn tech — projects, blueprints, and notes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-cover.png" />
+  <meta property="og:url" content="https://sanskriti-1711.github.io/Sanskriti-portfolio/" />
 
-	//////////////////////////////////////////////////////
-	 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+  <style>
+    :root{
+      --bg: #05060f;
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted2: rgba(255,255,255,.55);
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+      --panel: rgba(255,255,255,.055);
+      --panel2: rgba(255,255,255,.085);
+      --border: rgba(255,255,255,.14);
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+      --radius: 18px;
+      --shadow: 0 24px 80px rgba(0,0,0,.60);
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/user-3.jpeg);"></div>
-							<h1><span>Sanskriti Shevgaonkar</span></h1>
-							<h3><span>Artificial Intelligence / Cybesecurity</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://github.com/Sanskriti-1711"><i class="icon-github2"></i></a></li>
-									<li><a href="facebook.com/sanskriti.shevgaonkar17"><i class="icon-facebook2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/sanskriti-shevgaonkar/"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://instagram.com/sans._.1711?igshid=YmMyMTA2M2Y="><i class="icon-instagram2"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+      /* Neon palette */
+      --violet: #7c3aed;
+      --cyan: #22d3ee;
+      --pink: #ff2d55;
+      --amber: #ffb703;
+      --lime: #a3ff12;
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4" >
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Sanskriti Hemant Shevgaonkar</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+91 8879391974</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block" style="overflow-wrap: break-word ">sanskritishevgaonkar1711@gmail.com</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block" style="overflow-wrap: break-word ">sanskritishevgaonkar1711@gmail.com</span></li>
-						<li><span class="first-block">Website:</span><span class="second-block" style="word-wrap: wrap;
-  word-break: break-all;">https://sanskriti-1711.github.io/Sanskriti-portfolio/</span></li>
-						<!--<li><span class="first-block">Address:</span><span class="second-block">02, Ashok Watika, cr.Dindayal road, Dombivli West 421202</span></li>-->
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>With over 9 months of experience in cybersecurity and AI, I have cultivated a strong foundation in these cutting-edge fields. Through diverse projects and internships, I have honed my skills and gained practical knowledge, while my part-time tutoring in the Certified Ethical Hacker course has deepened my understanding of ethical hacking practices and effective communication of complex concepts. My problem-solving abilities, attention to detail, and collaborative mindset have consistently stood out, and I thrive in dynamic environments that foster creativity, innovation, and continuous improvement. Committed to continuous learning and professional development, I am driven to contribute to the field by protecting organizations from cyber threats and advancing AI technology.</p>
+      --glowA: rgba(124,58,237,.28);
+      --glowB: rgba(34,211,238,.20);
+      --glowC: rgba(255,45,85,.14);
+    }
 
-					<p>
-						<!--<ul class="fh5co-social-icons">
-							<li><a href="https://www.linkedin.com/in/sanskriti-shevgaonkar/"><i class="icon-linkedin2"></i></a></li>
-                            <li><a href="https://github.com/Sanskriti-1711"><i class="icon-github2"></i></a></li>
-							<li><a href="facebook.com/sanskriti.shevgaonkar17"><i class="icon-facebook3"></i></a></li>
-						    <li><a href="https://instagram.com/sans._.1711?igshid=YmMyMTA2M2Y="><i class="icon-instagram2"></i></a></li>
-						</ul>-->
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      overflow-x:hidden;
+    }
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ opacity:.96; }
 
-	<!--<div id="fh5co-resume" class="fh5co-bg-color">-->
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">CEH Teacher</h3>
-									<span class="company">IndiaTech - August 2021 - February 2022</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>•	Worked as part-time CEH lecturer</p>
-                                    <p>•	Completed training as the Certified Ethical Hacker (CEH) exam syllabus</p>
-<p>•	Appointed as a faculty for CEH based on performance in the practice tests & field
-</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Ethical Hacking & Pentesting Intern                                                                                             </h3>
-									<span class="company">Razz Security - January – March 2022</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>•	Performed hands-on training for Ethical Hacking and Pentesting</p>
-<p>•	Completed a project identifying and documenting vulnerabilities of a compromised system from HackintheBox </p>
-<p>•	Gained understanding of - Website hacking, System hacking, Password Cracking, Phishing, Penetration Testing, Kali Linux, and Networking
-</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Artificial Intelligence Intern                                                                                           </h3>
-									<span class="company">1Stop.ai - November 2021 - January 2022</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>•	Completed an Industrial Program on Artificial Intelligence from Personify</p>
-<p>•	Successfully completed the projects (under the guidance of the mentor and company representative) on
-1. Recognition Of Objects with Convolutional Neural Network
-2. Handwritten Digit Classification with CNN
-3. News Classification using NLP
-</p>
-								</div>
-							</div>
-						</li>
-                        <li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Business</h3>
-									<span class="company">PrintShop - November 2021</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>•	Built PrintShop - an online shop that provides customized printing services</p>
-<p>•	Commenced this business to provide printing of Mugs, T-shirts, and Hoodies and ship all over India</p>
-<p>•	Created a customer base in IIT Raichur and in the college as well
+    /* ===== Background: aurora + vignette + grain ===== */
+    .aurora{
+      position: fixed;
+      inset: -25%;
+      pointer-events:none;
+      z-index: 0;
+      background:
+        radial-gradient(900px 550px at 18% 20%, rgba(124,58,237,.48), transparent 60%),
+        radial-gradient(900px 550px at 82% 18%, rgba(34,211,238,.32), transparent 60%),
+        radial-gradient(900px 550px at 52% 80%, rgba(255,45,85,.20), transparent 62%),
+        radial-gradient(700px 520px at 16% 84%, rgba(255,183,3,.12), transparent 60%),
+        radial-gradient(800px 520px at 86% 88%, rgba(163,255,18,.10), transparent 60%);
+      filter: blur(12px);
+      opacity: .96;
+      animation: drift 16s ease-in-out infinite alternate;
+    }
+    @keyframes drift{
+      0%{ transform: translate3d(-1.2%, -1.0%, 0) scale(1.0); }
+      100%{ transform: translate3d(1.6%, 1.2%, 0) scale(1.03); }
+    }
 
-</p>
-								</div>
-							</div>
-						</li>
-                        <li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Artificial Intelligence Intern                                                                                           </h3>
-									<span class="company">Cloud Counselage                           -  April – July 20202022</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>•	Learned technologies such as Artificial Intelligence, Deep Learning, Python, Neural Networks & NLP</p>
-<p>•	Developed a Chatbot - Hobo Chatbot - for the company's website using Python Language, in Google Colaboratory</p>
-                                    <p>•	Chatbot answers the queries for the IP Internship Program launched by the company</p>
-<p>•	Worked on a live project; built a Neural Network Algorithm for Computerized Adaptive Test (CAT)
+    .vignette{
+      position: fixed;
+      inset: 0;
+      pointer-events:none;
+      z-index: 0;
+      background:
+        radial-gradient(900px 900px at 50% 40%, transparent 48%, rgba(0,0,0,.60) 86%),
+        radial-gradient(1100px 700px at 50% 120%, rgba(0,0,0,.72), transparent 60%);
+      opacity: .92;
+    }
 
-</p>
-								</div>
-							</div>
-						</li>
+    .grain{
+      position: fixed;
+      inset: 0;
+      pointer-events:none;
+      z-index: 1;
+      opacity: .10;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+    }
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">MSc Artificial Intelligence</h3>
-									<span class="company">University of Southampton - 2023 - 2024</span>
-								</div>
-								<div class="timeline-body">
-									<p>Course outcomes: Foundations of Artificial Intelligence, Machine Learning, Natural Language Processing, Computer Vision, Robotics and Intelligent Agents, etc.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">B.E. Computer Science</h3>
-									<span class="company">University of Mumbai - 2019 - 2023</span>
-								</div>
-								<div class="timeline-body">
-                                    <p>CGPA- 8.71</p>
-									<p>Course outcomes: Programming Languages(C, Python, Java), Data Structures and Algorithms, Computer Networks, Database Management Systems(RDBMS, SQL), Software Engineering, Artificial Intelligence, Machine Learning, Digital Forensics, etc.</p>
-								</div>
-							</div>
-						</li>
-				
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+    canvas#stars{
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events:none;
+      opacity: .55;
+    }
 
-	<div id="fh5co-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Domains</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Design</h3>
-								<p>Front-end architecture: HTTML, CSS, JavaScript, Bootstrap</p>
-							</div>
-						</div>
-					</div>
+    /* ===== Constellation overlay (hand-drawn tech) ===== */
+    .constellation-wrap{
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events:none;
+      opacity: .36;
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 0 16px rgba(34,211,238,.12));
+      animation: constDrift 28s ease-in-out infinite alternate;
+    }
+    @keyframes constDrift{
+      0%{ transform: translate3d(0,0,0); }
+      100%{ transform: translate3d(18px,-10px,0); }
+    }
+    .constellation{
+      width: 100%;
+      height: 100%;
+    }
+    .constellation line{
+      stroke: rgba(34,211,238,.22);
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      stroke-dasharray: 6 10;
+      animation: dash 18s linear infinite;
+      filter: url(#roughen);
+    }
+    .constellation circle{
+      fill: rgba(255,255,255,.72);
+      filter: url(#glow);
+      animation: twinkle 3.8s ease-in-out infinite;
+    }
+    .constellation circle.c2{ animation-delay: -1.2s; }
+    .constellation circle.c3{ animation-delay: -2.1s; }
+    @keyframes dash{
+      to{ stroke-dashoffset: -200; }
+    }
+    @keyframes twinkle{
+      0%,100%{ opacity:.55; transform: scale(1); }
+      50%{ opacity:.95; transform: scale(1.12); }
+    }
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-briefcase"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Artificial Intelligence</h3>
-								<p>Python, R, NLP, Machine Learning, Deep Learning, PyTorch, Tensorflow, Neural Networks, Computer Vision, Image processing, etc.</p>
-							</div>
-						</div>
+    /* ===== Floating blobs ===== */
+    .blob{
+      position: fixed;
+      width: 520px;
+      height: 520px;
+      border-radius: 999px;
+      pointer-events:none;
+      z-index: 0;
+      filter: blur(18px);
+      opacity: .30;
+      mix-blend-mode: screen;
+      animation: floaty 18s ease-in-out infinite;
+    }
+    .blob.b1{
+      left: -160px; top: 120px;
+      background: radial-gradient(circle at 30% 30%, rgba(124,58,237,.88), transparent 56%),
+                  radial-gradient(circle at 70% 60%, rgba(34,211,238,.55), transparent 60%);
+      animation-duration: 22s;
+    }
+    .blob.b2{
+      right: -180px; top: 220px;
+      width: 560px; height: 560px;
+      background: radial-gradient(circle at 35% 40%, rgba(255,45,85,.70), transparent 58%),
+                  radial-gradient(circle at 70% 65%, rgba(255,183,3,.35), transparent 60%);
+      animation-duration: 26s;
+      animation-delay: -6s;
+    }
+    .blob.b3{
+      left: 18%; bottom: -260px;
+      width: 720px; height: 720px;
+      background: radial-gradient(circle at 40% 35%, rgba(34,211,238,.40), transparent 60%),
+                  radial-gradient(circle at 70% 70%, rgba(163,255,18,.16), transparent 64%),
+                  radial-gradient(circle at 35% 75%, rgba(124,58,237,.35), transparent 62%);
+      animation-duration: 28s;
+      animation-delay: -10s;
+    }
+    @keyframes floaty{
+      0%{ transform: translate3d(0,0,0) scale(1); }
+      50%{ transform: translate3d(22px,-18px,0) scale(1.03); }
+      100%{ transform: translate3d(-18px,20px,0) scale(1.02); }
+    }
 
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-search"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Cybersecurity</h3>
-								<p>Kali Linux, Computer Networks, Digital Forensics, Autopsy, DDOP/DCDL-DDOP, CEH, etc.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+    /* ===== Layout ===== */
+    .container{
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 22px;
+      position: relative;
+      z-index: 2;
+    }
 
+    /* Nav */
+    .nav{
+      position: sticky; top:0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(5,6,15,.58);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      max-width: 1120px; margin: 0 auto;
+    }
+    .brand{
+      display:flex; align-items:center; gap: 10px;
+      font-weight: 900; letter-spacing: .5px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .dot{
+      width: 10px; height: 10px; border-radius: 99px;
+      background: conic-gradient(from 180deg, var(--violet), var(--cyan), var(--pink), var(--amber), var(--violet));
+      box-shadow: 0 0 0 4px rgba(124,58,237,.18), 0 0 22px rgba(34,211,238,.20);
+    }
+    .navlinks{
+      display:flex; gap: 14px; align-items:center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .navlinks a{
+      font-size: 14px;
+      padding: 8px 10px;
+      color: var(--muted);
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+    .navlinks a:hover{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+    }
 
-				<div class="row">
-					<div class="col-md-4 text-center">
+    /* Cards: neon glass + cursor glow */
+    .card, .proj, .exp, .skillbox, .stat{
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transform-style: preserve-3d;
+    }
+    .card::before, .proj::before, .exp::before, .skillbox::before, .stat::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      padding:1px;
+      border-radius: inherit;
+      background: linear-gradient(135deg,
+        rgba(34,211,238,.22),
+        rgba(124,58,237,.22),
+        rgba(255,45,85,.16),
+        rgba(255,183,3,.10));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity:.65;
+      pointer-events:none;
+    }
+    .card::after, .proj::after, .exp::after, .skillbox::after, .stat::after{
+      content:"";
+      position:absolute;
+      inset:-160px;
+      background:
+        radial-gradient(circle at var(--mx,50%) var(--my,50%),
+          rgba(34,211,238,.18),
+          rgba(124,58,237,.12),
+          rgba(255,45,85,.08),
+          transparent 58%);
+      opacity:.92;
+      pointer-events:none;
+      transition: opacity .15s ease;
+    }
 
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-bargraph"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Cloud Computing</h3>
-								<p>Amazon Web Services(AWS), Microsoft Azure, IBM Cloud</p>
-							</div>
-						</div>
+    /* Hero */
+    .hero{
+      padding: 56px 0 26px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 26px;
+      align-items: start;
+      position: relative;
+    }
+    @media (max-width: 900px){
+      .hero{ grid-template-columns: 1fr; }
+    }
 
-					</div>
+    .hero-left{ padding: 26px; position: relative; }
+    .hero-left > *{ position: relative; z-index: 2; }
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-genius"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Software Development</h3>
-								<p>software development methodologies, software life cycle, requirement analysis, design principles, testing, and software project management. </p>
-							</div>
-						</div>
+    .kicker{
+      display:inline-flex; gap: 10px; align-items:center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+    .kicker b{ color: var(--text); font-weight: 650; }
 
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-chat"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Android Development</h3>
-								<p>Android Studio, Java, Kotlin</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    h1{
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1.05;
+      margin: 14px 0 10px;
+      letter-spacing: -1px;
+    }
+    .gradient-title{
+      background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(34,211,238,.95), rgba(124,58,237,.95), rgba(255,45,85,.85));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Programming Skills</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML5</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">CSS</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">JavaScript</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Java</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Kotlin</span><span class="value-right">60%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Assembly</span><span class="value-right">55%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">R</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-                    <div class="progress-wrap">
-						<h3><span class="name-left">C</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    .subtitle{
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 74ch;
+      margin: 0 0 18px;
+    }
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Projects</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/Image-Splicing-and-Deepfake-Detection" class="work" style="background-image: url(images/portfolio-1.jpg);">
-						<div class="desc">
-							<h3>Image Splicing and Deepfake Detection</h3>
-							<span>Deep Learning, CNN, Siamese architecture</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/Virtual-Try-On" class="work" style="background-image: url(images/portfolio-2.jpg);">
-						<div class="desc">
-							<h3>Virtual Try-On</h3>
-							<span>Machine Learning, ACGPN</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/Universal-Transpiler" class="work" style="background-image: url(images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>Universal Transpiler</h3>
-							<span>Website, C, C++, Java</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/Portfolio-website-generator" class="work" style="background-image: url(images/portfolio-4.jpeg);">
-						<div class="desc">
-							<h3>Web Portfolio Generator</h3>
-							<span>HTML, JavaScript, CSS, PHP, Node js</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/TechBuddy" class="work" style="background-image: url(images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>TechBuddy</h3>
-							<span>AWS, Hadoop, Docker, Python</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/OpenCV-Face-Identification-" class="work" style="background-image: url(images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>Terraform: OpenCV Face Identification</h3>
-							<span>AWS, Terraform, VPC</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/Sanskriti-1711/CAT" class="work" style="background-image: url(images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>Neural Network Algorithm For CAT</h3>
-							<span>Python, Google Colab</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://festive-pasteur-e25173.netlify.app/" class="work" style="background-image: url(images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>Netflix Clone</h3>
-							<span>GraphQL, React</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    .cta-row{
+      display:flex; gap: 12px; flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .btn{
+      display:inline-flex; gap: 10px; align-items:center;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      font-weight: 800;
+      font-size: 14px;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+      will-change: transform;
+    }
+    .btn.primary{
+      border-color: rgba(34,211,238,.30);
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.55), rgba(255,45,85,.30));
+      box-shadow: 0 18px 60px rgba(124,58,237,.25);
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 22px 70px rgba(0,0,0,.55);
+      background: rgba(255,255,255,.07);
+    }
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Blogs/Articles</h2>
-					<p>By fostering the sharing of knowledge, professionals and enthusiasts are empowered to delve into emerging technologies, engage in discussions on best practices, and remain abreast of the latest trends within their respective fields. In recognition of this belief, I have diligently documented my own expertise, contributing to the collective body of knowledge and providing a valuable resource for others seeking to expand their understanding.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://medium.com/@sanskritishevgaonkar1711/robotic-assisted-surgery-da-vinci-system-9398dddf402e" class="blog-bg" style="background-image: url(images/article-1.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">June 12, 2022</span>
-							<h3><a href="https://medium.com/@sanskritishevgaonkar1711/robotic-assisted-surgery-da-vinci-system-9398dddf402e">Robotic-Assisted Surgery: Da Vinci System</a></h3>
-							<p>Robotic surgery, also called robot-assisted surgery, allows doctors to perform many types of complex procedures with more precision, flexibility, and control than is possible with conventional techniques.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="https://medium.com/@sanskritishevgaonkar1711/robotic-assisted-surgery-da-vinci-system-9398dddf402e">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://www.linkedin.com/pulse/industry-use-cases-neural-networks-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D" class="blog-bg" style="background-image: url(images/article-2.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">April 21, 2021</span>
-							<h3><a href="https://www.linkedin.com/pulse/industry-use-cases-neural-networks-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D">Industry Use Cases of Neural Networks</a></h3>
-							<p>A branch of machine learning, neural networks (NN), also known as artificial neural networks (ANN), are computational models — essentially algorithms.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="https://www.linkedin.com/pulse/industry-use-cases-neural-networks-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://www.linkedin.com/pulse/dominos-pizza-enterprises-using-aws-predictive-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D" class="blog-bg" style="background-image: url(images/article-3.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">September 24, 2020</span>
-							<h3><a href="https://www.linkedin.com/pulse/dominos-pizza-enterprises-using-aws-predictive-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D">Domino’s Pizza Enterprises Using AWS for Predictive Ordering</a></h3>
-							<p>When it comes to the global pizza business, Domino’s Pizza Enterprises Limited (Domino’s) has a large slice of the pie.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="https://www.linkedin.com/pulse/dominos-pizza-enterprises-using-aws-predictive-sanskriti-shevgaonkar/?trackingId=X5%2B8seoxTYiYB3xbusnrhQ%3D%3D">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>If you are seeking a dedicated and versatile professional with a solid foundation in cybersecurity and AI, I would welcome the opportunity to connect and explore potential collaborations.</p>
-					<p><a href="mailto:“sanskritishevgaonkar1711@gmail.com" class="btn btn-default btn-lg">Contact Us</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+    .meta{
+      margin-top: 16px;
+      display:flex; gap: 10px; flex-wrap: wrap;
+      color: var(--muted2);
+      font-size: 13px;
+    }
+    .pill{
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+    }
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="mailto:sanskritishevgaonkar1711@gmail.com" method="get" enctype="text/plain">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
+    .tldr{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+    }
+    .tldr b{ color: rgba(255,255,255,.95); }
+    .tldr ul{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    .tldr li{ margin: 6px 0; }
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
+    .hero-right{ padding: 20px; display:grid; gap: 12px; position: relative; }
+    .profile{
+      display:flex; gap: 14px; align-items:center;
+      padding: 14px;
+      border-radius: 16px;
+    }
+    /* NOTE: update this image path if yours is different */
+    .avatar{
+      width: 60px; height: 60px; border-radius: 16px;
+      background: url("images/user-3.jpg") center/cover no-repeat;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+      flex: 0 0 auto;
+    }
+    .profile h2{ margin:0; font-size: 16px; }
+    .profile p{ margin:2px 0 0; color: var(--muted); font-size: 13px; }
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
+    .statgrid{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat{ padding: 14px; border-radius: 16px; background: rgba(255,255,255,.05); }
+    .stat .label{ color: var(--muted2); font-size: 12px; }
+    .stat .value{ font-size: 18px; font-weight: 900; margin-top: 4px; letter-spacing: -0.4px; }
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
+    .callout{
+      padding: 16px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(124,58,237,.16), rgba(34,211,238,.10), rgba(255,45,85,.08));
+      border: 1px solid rgba(34,211,238,.18);
+      margin: 0 14px 14px;
+    }
 
-			</form>	
-		</div>
-	</div>
+    /* ===== Tech jellyfish (SVG illustration) ===== */
+    .jelly{
+      position: absolute;
+      right: -14px;
+      top: 74px;
+      width: 360px;
+      height: 420px;
+      opacity: .92;
+      pointer-events:none;
+      z-index: 1;
+      filter: drop-shadow(0 0 28px rgba(34,211,238,.16));
+      animation: jellyFloat 7.6s ease-in-out infinite;
+      transform-origin: 70% 20%;
+    }
+    @keyframes jellyFloat{
+      0%,100%{ transform: translate3d(0,0,0) rotate(-1deg); }
+      50%{ transform: translate3d(-10px,10px,0) rotate(1.5deg); }
+    }
+    .jelly .tentacle{
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2.2;
+      fill: none;
+      stroke-dasharray: 6 12;
+      animation: tent 6s linear infinite;
+      filter: url(#roughen);
+      opacity: .82;
+    }
+    .jelly .tentacle.t2{ animation-duration: 7.4s; opacity:.70; }
+    .jelly .tentacle.t3{ animation-duration: 8.2s; opacity:.78; }
+    .jelly .tentacle.t4{ animation-duration: 9.0s; opacity:.66; }
+    @keyframes tent{
+      to{ stroke-dashoffset: -240; }
+    }
 
-	<!--<div id="map" class="fh5co-map"></div>-->
-	</div>
-	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>🎨 © 2023 Sanskriti Shevgaonkar. All Rights Blossomed. 🌸 <br>Architected with Artistry by <a href="#" target="_blank">Sanskriti Shevgaonkar 🎨</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    /* Sections */
+    section{ padding: 26px 0; position: relative; }
+    .section-title{
+      display:flex; align-items:end; justify-content:space-between; gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .section-title h3{ margin:0; font-size: 20px; letter-spacing: -0.3px; }
+    .section-title p{ margin:0; color: var(--muted); font-size: 14px; max-width: 74ch; }
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
+    .grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .grid-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    @media (max-width: 900px){
+      .grid-3, .grid-2{ grid-template-columns: 1fr; }
+      .jelly{ opacity:.55; right:-40px; }
+    }
 
-	</body>
+    .proj, .exp, .skillbox{
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.05);
+      transition: transform .15s ease, background .15s ease;
+      will-change: transform;
+    }
+    .proj:hover, .exp:hover{ transform: translateY(-2px); background: rgba(255,255,255,.07); }
+
+    .proj h4, .exp h4{ margin: 0 0 6px; font-size: 16px; }
+    .small{ color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+
+    .chips{ display:flex; flex-wrap:wrap; gap: 8px; margin-top: 10px; }
+    .chip{
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.74);
+    }
+
+    .links{ display:flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+    .link{
+      font-weight: 850;
+      font-size: 13px;
+      color: rgba(255,255,255,.90);
+      border-bottom: 1px dashed rgba(255,255,255,.28);
+      padding-bottom: 2px;
+    }
+    .link:hover{ border-bottom-color: rgba(34,211,238,.65); }
+
+    .two-col{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
+
+    /* ===== Neon divider (hand-drawn wave) ===== */
+    .divider{
+      width: 100%;
+      height: 60px;
+      margin: 10px 0 0;
+      opacity: .55;
+      pointer-events:none;
+    }
+    .divider path{
+      fill: none;
+      stroke: rgba(34,211,238,.30);
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-dasharray: 10 16;
+      animation: dash2 20s linear infinite;
+      filter: url(#roughen);
+    }
+    @keyframes dash2{ to{ stroke-dashoffset: -360; } }
+
+    /* Footer */
+    footer{
+      padding: 36px 0 50px;
+      color: var(--muted2);
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      margin-top: 24px;
+    }
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items:center;
+    }
+
+    /* Easter egg toast */
+    .toast{
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%);
+      z-index: 80;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(8,10,18,.68);
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+      opacity: 0;
+      pointer-events:none;
+      transition: opacity .25s ease, transform .25s ease;
+    }
+    .toast.show{
+      opacity: 1;
+      transform: translateX(-50%) translateY(-4px);
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .aurora, .blob, .constellation-wrap, .jelly, .divider path{ animation: none !important; }
+      html{ scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hidden SVG defs for glow + hand-drawn roughen -->
+  <svg width="0" height="0" style="position:absolute; left:-9999px; top:-9999px;">
+    <defs>
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="2.6" result="b"/>
+        <feColorMatrix in="b" type="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 0.9 0" result="c"/>
+        <feMerge>
+          <feMergeNode in="c"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+
+      <!-- Hand-drawn wobble -->
+      <filter id="roughen" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+      <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#22d3ee" stop-opacity=".95"/>
+        <stop offset="45%" stop-color="#7c3aed" stop-opacity=".92"/>
+        <stop offset="100%" stop-color="#ff2d55" stop-opacity=".85"/>
+      </linearGradient>
+
+      <radialGradient id="jcap" cx="40%" cy="35%" r="70%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".75"/>
+        <stop offset="30%" stop-color="#22d3ee" stop-opacity=".55"/>
+        <stop offset="65%" stop-color="#7c3aed" stop-opacity=".35"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+  </svg>
+
+  <!-- Background layers -->
+  <div class="aurora"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <canvas id="stars"></canvas>
+
+  <!-- Constellation overlay -->
+  <div class="constellation-wrap" aria-hidden="true">
+    <svg class="constellation" viewBox="0 0 1200 700" preserveAspectRatio="none">
+      <!-- lines -->
+      <line x1="120" y1="120" x2="260" y2="240"/>
+      <line x1="260" y1="240" x2="420" y2="170"/>
+      <line x1="420" y1="170" x2="580" y2="260"/>
+      <line x1="580" y1="260" x2="760" y2="190"/>
+      <line x1="760" y1="190" x2="920" y2="260"/>
+      <line x1="920" y1="260" x2="1060" y2="220"/>
+
+      <line x1="200" y1="520" x2="360" y2="420"/>
+      <line x1="360" y1="420" x2="520" y2="520"/>
+      <line x1="520" y1="520" x2="710" y2="440"/>
+      <line x1="710" y1="440" x2="900" y2="530"/>
+
+      <!-- nodes -->
+      <circle class="c1" cx="120" cy="120" r="2.3"/>
+      <circle class="c2" cx="260" cy="240" r="2.0"/>
+      <circle class="c3" cx="420" cy="170" r="2.2"/>
+      <circle class="c2" cx="580" cy="260" r="2.1"/>
+      <circle class="c1" cx="760" cy="190" r="2.2"/>
+      <circle class="c3" cx="920" cy="260" r="2.1"/>
+      <circle class="c2" cx="1060" cy="220" r="2.0"/>
+
+      <circle class="c2" cx="200" cy="520" r="2.1"/>
+      <circle class="c3" cx="360" cy="420" r="2.0"/>
+      <circle class="c1" cx="520" cy="520" r="2.2"/>
+      <circle class="c2" cx="710" cy="440" r="2.0"/>
+      <circle class="c3" cx="900" cy="530" r="2.2"/>
+    </svg>
+  </div>
+
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand" id="brand">
+        <span class="dot"></span> Sanskriti
+      </div>
+      <div class="navlinks">
+        <a href="#principles">Principles</a>
+        <a href="#projects">Work</a>
+        <a href="#blueprint">Blueprint</a>
+        <a href="#experience">Timeline</a>
+        <a href="#skills">Toolkit</a>
+        <a href="#credibility">Receipts</a>
+        <a href="#writing">Notes</a>
+        <a href="#contact">Signal</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left card">
+        <div class="kicker">
+          Open to roles: <b>Applied ML / ML Engineer • AI Engineer • Software Engineer • MLOps/Cloud</b>
+          <span class="pill">Birmingham, UK</span>
+        </div>
+
+        <h1 class="gradient-title">Neon systems. Quiet outcomes.</h1>
+        <p class="subtitle">
+          I build at the edge of signal and chaos — LLMs, retrieval, NLP, vision, and security-aware engineering.
+          I like hard problems, sharp interfaces, and systems that feel invisible when they work.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">Enter the Work</a>
+          <a class="btn" href="https://drive.google.com/file/d/1QmExDE-6SkU7SCMOmQ9C_PFwZuo5OMRk/view?usp=sharing" target="_blank" rel="noopener">CV (If you must)</a>
+          <a class="btn" href="https://www.linkedin.com/in/sanskriti-shevgaonkar/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/Sanskriti-1711" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="meta">
+          <span class="pill">LLMs • Embeddings • RAG</span>
+          <span class="pill">NLP • Semantic Search • Retrieval</span>
+          <span class="pill">PyTorch • TensorFlow • scikit-learn</span>
+          <span class="pill">Docker • REST APIs • AWS/Azure</span>
+        </div>
+
+        <div class="tldr">
+          <b>Signals</b>
+          <ul>
+            <li><b>LLM/RAG systems</b> — CVE agent turning raw security records into usable context.</li>
+            <li><b>Vision research</b> — 3D try-on and forgery detection where details matter.</li>
+            <li><b>Security-aware engineering</b> — CEH instructor + pentesting foundation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-right card">
+        <!-- Tech jellyfish illustration -->
+        <svg class="jelly" viewBox="0 0 420 500" aria-hidden="true">
+          <!-- cap glow -->
+          <ellipse cx="250" cy="140" rx="120" ry="95" fill="url(#jcap)" opacity=".9"/>
+          <!-- cap outline (hand-drawn) -->
+          <path d="M150,165 C155,95 205,65 265,72 C325,80 365,120 360,170 C355,215 300,250 245,245 C190,240 145,210 150,165 Z"
+                fill="rgba(255,255,255,.04)" stroke="url(#neon)" stroke-width="2.3" filter="url(#roughen)" opacity=".95"/>
+          <!-- inner rings -->
+          <path d="M175,158 C190,115 225,98 265,105 C305,112 330,140 325,175"
+                fill="none" stroke="rgba(34,211,238,.40)" stroke-width="1.8" stroke-dasharray="4 10" filter="url(#roughen)"/>
+          <path d="M175,178 C200,210 285,218 325,186"
+                fill="none" stroke="rgba(124,58,237,.28)" stroke-width="1.6" stroke-dasharray="6 12" filter="url(#roughen)"/>
+
+          <!-- nodes -->
+          <circle cx="215" cy="110" r="3.2" fill="rgba(255,255,255,.85)" filter="url(#glow)"/>
+          <circle cx="295" cy="132" r="2.8" fill="rgba(255,255,255,.78)" filter="url(#glow)"/>
+          <circle cx="250" cy="198" r="2.6" fill="rgba(255,255,255,.70)" filter="url(#glow)"/>
+
+          <!-- tentacles (hand-drawn + neon) -->
+          <path class="tentacle t1" d="M185,238 C165,290 170,330 190,372 C210,416 200,446 175,468" stroke="rgba(34,211,238,.62)"/>
+          <path class="tentacle t2" d="M220,245 C210,300 220,330 240,370 C265,418 250,450 220,475" stroke="rgba(124,58,237,.58)"/>
+          <path class="tentacle t3" d="M255,245 C258,300 280,330 300,365 C325,410 310,450 280,475" stroke="rgba(255,45,85,.46)"/>
+          <path class="tentacle t4" d="M295,235 C310,290 330,330 325,372 C320,420 335,450 360,475" stroke="rgba(255,183,3,.36)"/>
+
+          <!-- “circuit” dots on tentacles -->
+          <circle cx="196" cy="320" r="2.0" fill="rgba(255,255,255,.70)" filter="url(#glow)"/>
+          <circle cx="237" cy="338" r="1.9" fill="rgba(255,255,255,.70)" filter="url(#glow)"/>
+          <circle cx="303" cy="348" r="1.8" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+          <circle cx="332" cy="412" r="1.9" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+        </svg>
+
+        <div class="profile">
+          <div class="avatar"></div>
+          <div>
+            <h2>Sanskriti Hemant Shevgaonkar</h2>
+            <p>Neon sci-fi • Hand-drawn tech • AI/ML • Security-aware</p>
+          </div>
+        </div>
+
+        <div class="statgrid">
+          <div class="stat">
+            <div class="label">Focus</div>
+            <div class="value">LLMs + Retrieval</div>
+          </div>
+          <div class="stat">
+            <div class="label">Strength</div>
+            <div class="value">Build → Ship</div>
+          </div>
+          <div class="stat">
+            <div class="label">Vibe</div>
+            <div class="value">Stealth</div>
+          </div>
+          <div class="stat">
+            <div class="label">Stack</div>
+            <div class="value">Python + Cloud</div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div style="font-weight:900; margin-bottom:6px;">What I’m drawn to</div>
+          <div class="small" style="margin:0;">
+            Roles where I can build AI features end-to-end: retrieval/LLM apps, ML pipelines, evaluation,
+            and production engineering — with obsession-level rigor.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 120 8, 240 52, 360 30 S 600 52, 720 30 S 960 8, 1200 30"></path>
+    </svg>
+
+    <!-- PRINCIPLES -->
+    <section id="principles">
+      <div class="section-title">
+        <h3>Principles</h3>
+        <p>How I build — and why it tends to work.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="proj">
+          <h4>Truth over noise</h4>
+          <p class="small">Evaluation, failure modes, and what breaks in production — I chase that.</p>
+        </div>
+        <div class="proj">
+          <h4>Security-aware by default</h4>
+          <p class="small">Threat modelling mindset — even when it’s “just an ML feature”.</p>
+        </div>
+        <div class="proj">
+          <h4>Make it feel inevitable</h4>
+          <p class="small">Simple UX, sharp APIs, clean pipelines. No drama in deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 140 50, 260 10, 380 30 S 620 10, 760 30 S 1000 50, 1200 30"></path>
+    </svg>
+
+    <!-- WORK -->
+    <section id="projects">
+      <div class="section-title">
+        <h3>Work</h3>
+        <p>Projects that feel like artifacts: built, tested, and ready to be questioned.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="proj">
+          <h4>CVE Summarisation Agent</h4>
+          <p class="small">
+            LLM agent that retrieves CVEs from NVD, structures context, and generates concise summaries using semantic similarity search.
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">NVD API</span><span class="chip">Embeddings</span><span class="chip">RAG</span><span class="chip">Semantic Search</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/CVE-summarisation-agent" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>3D Virtual Try-On (MSc Dissertation)</h4>
+          <p class="small">
+            Deep learning pipeline exploring 3D try-on concepts and visual realism improvements in apparel transfer.
+          </p>
+          <div class="chips">
+            <span class="chip">Computer Vision</span><span class="chip">Deep Learning</span><span class="chip">3D</span><span class="chip">Research</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/3D_virtual_try_on" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>Neural Network Algorithm for CAT</h4>
+          <p class="small">
+            Adaptive testing system that adjusts question difficulty based on user performance (personalisation logic + evaluation).
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">Neural Networks</span><span class="chip">Personalisation</span><span class="chip">Evaluation</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/CAT" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:14px;">
+        <div class="proj">
+          <h4>Image Splicing & Deepfake Detection</h4>
+          <p class="small">Deep learning approach for manipulation detection and forensic-style classification.</p>
+          <div class="chips">
+            <span class="chip">CNN</span><span class="chip">Deep Learning</span><span class="chip">Forensics</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/Image-Splicing-and-Deepfake-Detection" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>Netflix Clone</h4>
+          <p class="small">Component-driven UI and API-driven rendering (clean, responsive).</p>
+          <div class="chips">
+            <span class="chip">React</span><span class="chip">GraphQL</span><span class="chip">Frontend</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://festive-pasteur-e25173.netlify.app/" target="_blank" rel="noopener">Live</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>Portfolio Website Generator</h4>
+          <p class="small">Automated creation of portfolio sites — fast iteration, clean output.</p>
+          <div class="chips">
+            <span class="chip">Node.js</span><span class="chip">Automation</span><span class="chip">Web</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/Portfolio-website-generator" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 120 10, 240 50, 360 30 S 600 50, 720 30 S 960 10, 1200 30"></path>
+    </svg>
+
+    <!-- BLUEPRINT -->
+    <section id="blueprint">
+      <div class="section-title">
+        <h3>Blueprint</h3>
+        <p>The CVE agent, stripped down to intent and architecture.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="proj">
+          <h4>Problem → Intent</h4>
+          <p class="small" style="margin:0;">
+            Raw CVE records are dense and inconsistent. Triage needs context fast: impact, affected parts, and direction.
+          </p>
+          <div style="height:10px"></div>
+          <h4>Approach</h4>
+          <p class="small" style="margin:0;">
+            Retrieval-first pipeline: fetch → normalize → embed → search → generate → cache.
+          </p>
+        </div>
+
+        <div class="proj">
+          <h4>Flow (Static, Hand-Drawn Tech)</h4>
+
+          <!-- hand-drawn flow diagram -->
+          <svg viewBox="0 0 780 180" style="width:100%; max-width: 780px; opacity:.95;">
+            <defs>
+              <filter id="roughen2" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="3" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.3"/>
+              </filter>
+            </defs>
+
+            <g filter="url(#roughen2)">
+              <g fill="rgba(255,255,255,.04)" stroke="url(#neon)" stroke-width="2">
+                <rect x="20" y="56" rx="14" ry="14" width="120" height="56"/>
+                <rect x="168" y="56" rx="14" ry="14" width="140" height="56"/>
+                <rect x="340" y="56" rx="14" ry="14" width="130" height="56"/>
+                <rect x="500" y="56" rx="14" ry="14" width="120" height="56"/>
+                <rect x="650" y="56" rx="14" ry="14" width="110" height="56"/>
+              </g>
+
+              <g stroke="rgba(34,211,238,.40)" stroke-width="2" stroke-linecap="round">
+                <path d="M140 84 C 154 84, 154 84, 168 84" stroke-dasharray="6 10"/>
+                <path d="M308 84 C 324 84, 324 84, 340 84" stroke-dasharray="6 10"/>
+                <path d="M470 84 C 486 84, 486 84, 500 84" stroke-dasharray="6 10"/>
+                <path d="M620 84 C 636 84, 636 84, 650 84" stroke-dasharray="6 10"/>
+              </g>
+
+              <g fill="rgba(255,255,255,.82)" font-family="Inter, sans-serif" font-size="13" font-weight="800">
+                <text x="48"  y="88">NVD API</text>
+                <text x="192" y="88">Normalize</text>
+                <text x="368" y="88">Embeddings</text>
+                <text x="516" y="88">Search</text>
+                <text x="676" y="88">LLM</text>
+              </g>
+
+              <g fill="rgba(255,255,255,.60)" font-family="Inter, sans-serif" font-size="12" font-weight="700">
+                <text x="666" y="108">+ Cache</text>
+              </g>
+
+              <circle cx="84"  cy="44" r="3" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+              <circle cx="238" cy="44" r="3" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+              <circle cx="404" cy="44" r="3" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+              <circle cx="560" cy="44" r="3" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+              <circle cx="706" cy="44" r="3" fill="rgba(255,255,255,.65)" filter="url(#glow)"/>
+            </g>
+          </svg>
+
+          <div class="links">
+            <a class="link" href="https://github.com/Sanskriti-1711/CVE-summarisation-agent" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 160 46, 260 14, 380 30 S 620 14, 760 30 S 1040 46, 1200 30"></path>
+    </svg>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-title">
+        <h3>Timeline</h3>
+        <p>Where the stack got forged: systems, ML, security, and real-world delivery.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="exp">
+          <h4>Network Engineer — Tech Mahindra (BT Group)</h4>
+          <p class="small">Apr 2025 – Present • Birmingham, UK</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Supported network capacity planning and integration tasks inside large-scale operational environments.</li>
+            <li>Worked with complex infrastructure workflows where reliability, accuracy, and measurable outcomes matter.</li>
+            <li>Applied analytical thinking to strengthen planning and operational decision-making.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Large-scale Systems</span><span class="chip">Reliability</span><span class="chip">Operational Workflows</span>
+          </div>
+        </div>
+
+        <div class="exp">
+          <h4>AI Trainer (Contract) — Invisible Technologies</h4>
+          <p class="small">Oct 2024 – Present</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Created high-quality RLHF triads aligned to client specs, improving dataset consistency and evaluation quality.</li>
+            <li>Applied reasoning + NLP checks to reduce ambiguity and strengthen label reliability.</li>
+            <li>Built intuition for retrieval relevance and LLM failure modes.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">LLMs</span><span class="chip">RLHF</span><span class="chip">Data Quality</span><span class="chip">Evaluation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:14px;">
+        <div class="exp">
+          <h4>CEH Instructor — IndiaTech</h4>
+          <p class="small">Aug 2022 – Sept 2023</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Delivered CEH training and improved student pass rates by <b>30%</b>.</li>
+            <li>Explained complex security concepts clearly — strong proof of cross-team communication.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Security</span><span class="chip">Teaching</span><span class="chip">Threat Mindset</span>
+          </div>
+        </div>
+
+        <div class="exp">
+          <h4>Ethical Hacking & Pentesting Intern — Razz Security</h4>
+          <p class="small">Jan 2022 – Mar 2022</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Hands-on pentesting and vulnerability reporting with structured documentation.</li>
+            <li>Practical understanding across web/system security, Kali Linux tooling, and networking fundamentals.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Pentesting</span><span class="chip">Kali Linux</span><span class="chip">Reporting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:14px;">
+        <div class="exp">
+          <h4>Artificial Intelligence Intern — 1Stop.ai</h4>
+          <p class="small">Nov 2021 – Jan 2022</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Built applied ML projects across CV and NLP: object recognition, digit classification, news classification.</li>
+            <li>Iterated on model performance via architecture and training optimisation.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">CNN</span><span class="chip">NLP</span><span class="chip">Model Training</span>
+          </div>
+        </div>
+
+        <div class="exp">
+          <h4>Artificial Intelligence Intern — Cloud Counselage</h4>
+          <p class="small">Apr 2020 – Dec 2021</p>
+          <ul class="small" style="margin:0; padding-left: 18px;">
+            <li>Built an NLP chatbot in Python and explored personalisation logic for user interactions.</li>
+            <li>Created a neural network algorithm for Computerized Adaptive Testing (CAT).</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">NLP</span><span class="chip">Personalisation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 120 14, 260 46, 380 30 S 620 46, 760 30 S 1040 14, 1200 30"></path>
+    </svg>
+
+    <!-- TOOLKIT -->
+    <section id="skills">
+      <div class="section-title">
+        <h3>Toolkit</h3>
+        <p>Tools I reach for when things get real.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">AI/ML</h4>
+          <div class="chips">
+            <span class="chip">LLMs</span><span class="chip">Embeddings</span><span class="chip">RAG</span>
+            <span class="chip">NLP</span><span class="chip">Semantic Search</span><span class="chip">Retrieval</span>
+            <span class="chip">Deep Learning</span><span class="chip">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">ML Engineering</h4>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span>
+            <span class="chip">scikit-learn</span><span class="chip">NumPy</span><span class="chip">Pandas</span>
+            <span class="chip">Evaluation</span><span class="chip">Experimentation</span>
+          </div>
+        </div>
+
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">Software</h4>
+          <div class="chips">
+            <span class="chip">REST APIs</span><span class="chip">Git/GitHub</span><span class="chip">React</span>
+            <span class="chip">Java</span><span class="chip">Kotlin</span><span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">DevOps / Cloud</h4>
+          <div class="chips">
+            <span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">Azure (AI-900)</span>
+            <span class="chip">CI/CD (concepts)</span><span class="chip">Monitoring (concepts)</span>
+          </div>
+        </div>
+
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">Security-aware Engineering</h4>
+          <div class="chips">
+            <span class="chip">Threat mindset</span><span class="chip">Ethical hacking fundamentals</span>
+            <span class="chip">Secure systems thinking</span>
+          </div>
+        </div>
+
+        <div class="skillbox">
+          <h4 style="margin:0 0 8px;">Communication</h4>
+          <div class="chips">
+            <span class="chip">Mentoring</span><span class="chip">Documentation</span><span class="chip">Clarity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 150 52, 250 8, 380 30 S 650 8, 780 30 S 1050 52, 1200 30"></path>
+    </svg>
+
+    <!-- RECEIPTS -->
+    <section id="credibility">
+      <div class="section-title">
+        <h3>Receipts</h3>
+        <p>Proof, not promises.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="proj">
+          <h4>MSc Artificial Intelligence</h4>
+          <p class="small">University of Southampton (2023–2024)</p>
+          <div class="chips"><span class="chip">NLP</span><span class="chip">CV</span><span class="chip">ML</span></div>
+        </div>
+
+        <div class="proj">
+          <h4>BEng / B.E. Computer Science</h4>
+          <p class="small">University of Mumbai (2019–2023)</p>
+          <div class="chips"><span class="chip">DSA</span><span class="chip">Networks</span><span class="chip">Databases</span></div>
+        </div>
+
+        <div class="proj">
+          <h4>Certifications</h4>
+          <p class="small">Azure AI-900 • IBM AI Engineering • Cisco Intro to Cybersecurity</p>
+          <div class="chips"><span class="chip">Cloud</span><span class="chip">AI</span><span class="chip">Security</span></div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:14px;">
+        <div class="proj">
+          <h4>Publication: Credit Card Fraud Detection (IJRASET)</h4>
+          <p class="small">ML models for fraud detection on highly imbalanced transactional data.</p>
+          <div class="chips">
+            <span class="chip">Classification</span><span class="chip">Imbalanced Data</span><span class="chip">Risk Modelling</span>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>Strengths</h4>
+          <p class="small">AI + security blend, strong communication, and practical system-building mindset.</p>
+          <div class="chips">
+            <span class="chip">End-to-end delivery</span><span class="chip">Structured thinking</span><span class="chip">No fluff</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 120 8, 240 52, 360 30 S 600 52, 720 30 S 960 8, 1200 30"></path>
+    </svg>
+
+    <!-- NOTES -->
+    <section id="writing">
+      <div class="section-title">
+        <h3>Notes</h3>
+        <p>Writing as a form of clarity.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="proj">
+          <h4>Robotic-Assisted Surgery: Da Vinci System</h4>
+          <p class="small">Medium • Jun 12, 2022</p>
+          <div class="links">
+            <a class="link" href="https://medium.com/@sanskritishevgaonkar1711/robotic-assisted-surgery-da-vinci-system-9398dddf402e" target="_blank" rel="noopener">Read</a>
+          </div>
+        </div>
+        <div class="proj">
+          <h4>Industry Use Cases of Neural Networks</h4>
+          <p class="small">LinkedIn • Apr 21, 2021</p>
+          <div class="links">
+            <a class="link" href="https://www.linkedin.com/pulse/industry-use-cases-neural-networks-sanskriti-shevgaonkar/" target="_blank" rel="noopener">Read</a>
+          </div>
+        </div>
+        <div class="proj">
+          <h4>Domino’s Using AWS for Predictive Ordering</h4>
+          <p class="small">LinkedIn • Sep 24, 2020</p>
+          <div class="links">
+            <a class="link" href="https://www.linkedin.com/pulse/dominos-pizza-enterprises-using-aws-predictive-sanskriti-shevgaonkar/" target="_blank" rel="noopener">Read</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider" viewBox="0 0 1200 60" aria-hidden="true">
+      <path d="M0 30 C 160 46, 260 14, 380 30 S 620 14, 760 30 S 1040 46, 1200 30"></path>
+    </svg>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-title">
+        <h3>Signal</h3>
+        <p>Quickest ways to reach me.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="proj">
+          <h4>Email</h4>
+          <p class="small">sanskritishevgaonkar1711@gmail.com</p>
+          <div class="links">
+            <a class="link" href="mailto:sanskritishevgaonkar1711@gmail.com">Send an email</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h4>Phone</h4>
+          <p class="small">+44 7774 708380</p>
+        </div>
+
+        <div class="proj">
+          <h4>Profiles</h4>
+          <p class="small">LinkedIn + GitHub</p>
+          <div class="links">
+            <a class="link" href="https://www.linkedin.com/in/sanskriti-shevgaonkar/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="link" href="https://github.com/Sanskriti-1711" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <div>© <span id="year"></span> Sanskriti Shevgaonkar</div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="link" href="#projects">Work</a>
+          <a class="link" href="#experience">Timeline</a>
+          <a class="link" href="#contact">Signal</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast">If you’re reading this… you’re curious. I like that.</div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Easter egg
+    const brand = document.getElementById('brand');
+    const toast = document.getElementById('toast');
+    brand.addEventListener('click', () => {
+      toast.classList.add('show');
+      clearTimeout(window.__t);
+      window.__t = setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+
+    // Cursor glow (per element)
+    const glowEls = document.querySelectorAll('.card, .proj, .exp, .skillbox, .stat');
+    glowEls.forEach(el => {
+      el.addEventListener('pointermove', (e) => {
+        const r = el.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width) * 100;
+        const y = ((e.clientY - r.top) / r.height) * 100;
+        el.style.setProperty('--mx', x + '%');
+        el.style.setProperty('--my', y + '%');
+      }, { passive: true });
+    });
+
+    // Optional subtle tilt (kept gentle)
+    const prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduce) {
+      glowEls.forEach(el => {
+        el.addEventListener('pointermove', (e) => {
+          const r = el.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width - 0.5;
+          const py = (e.clientY - r.top) / r.height - 0.5;
+          const rotY = px * 3.0;     // small
+          const rotX = -py * 3.0;    // small
+          el.style.transform = `translateY(-1px) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+        }, { passive: true });
+        el.addEventListener('pointerleave', () => {
+          el.style.transform = '';
+        });
+      });
+    }
+
+    // STARFIELD CANVAS (subtle, light)
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d');
+    let w, h, stars;
+
+    function resize(){
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      w = canvas.width = Math.floor(window.innerWidth * dpr);
+      h = canvas.height = Math.floor(window.innerHeight * dpr);
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+
+      const count = Math.min(240, Math.floor((window.innerWidth * window.innerHeight) / 9000));
+      stars = Array.from({length: count}, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: (Math.random() * 1.2 + 0.2) * dpr,
+        a: Math.random() * 0.7 + 0.12,
+        s: (Math.random() * 0.35 + 0.06) * dpr
+      }));
+    }
+
+    function tick(){
+      if (prefersReduce) return; // respect reduced motion
+      ctx.clearRect(0,0,w,h);
+
+      for (const s of stars){
+        s.y += s.s;
+        if (s.y > h) { s.y = -10; s.x = Math.random() * w; }
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${s.a})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(tick);
+    }
+
+    window.addEventListener('resize', resize, { passive: true });
+    resize();
+    tick();
+  </script>
+</body>
 </html>
-
