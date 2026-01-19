@@ -308,16 +308,29 @@
     .hero-left > *{ position: relative; z-index: 2; }
 
     .kicker{
-      display:inline-flex; gap: 10px; align-items:center;
-      padding: 8px 12px;
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+    
+      gap: 10px;
+      row-gap: 6px;
+    
+      padding: 10px 16px;
+      line-height: 1.4;
+    
       border-radius: 999px;
       border: 1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.05);
       color: var(--muted);
       font-size: 13px;
-      flex-wrap: wrap;
     }
-    .kicker b{ color: var(--text); font-weight: 650; }
+    
+    .kicker-label{ color: var(--muted); }
+    
+    .kicker-roles{ flex: 1 1 420px; }  /* allows the roles to wrap nicely */
+    
+    .kicker .pill{ white-space: nowrap; }
 
     h1{
       font-size: clamp(34px, 4vw, 56px);
@@ -665,9 +678,9 @@
         <a href="#blueprint">Blueprint</a>
         <a href="#experience">Timeline</a>
         <a href="#skills">Toolkit</a>
-        <a href="#credibility">Receipts</a>
+        <a href="#credibility">Education & Certifications</a>
         <a href="#writing">Notes</a>
-        <a href="#contact">Signal</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </div>
@@ -677,7 +690,8 @@
     <div class="hero">
       <div class="hero-left card">
         <div class="kicker">
-          Open to roles: <b>Applied ML / ML Engineer • AI Engineer • Software Engineer • MLOps/Cloud</b>
+          <span class="kicker-label">Open to roles:</span>
+          <span class="kicker-roles"><b>Applied ML / ML Engineer • AI Engineer • Software Engineer • MLOps/Cloud</b></span>
           <span class="pill">Birmingham, UK</span>
         </div>
 
