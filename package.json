@@ -1,0 +1,17 @@
+{
+  "name": "sanskriti-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanskriti Shevgaonkar portfolio — applied AI, software engineering, and technical writing casebook.",
+  "scripts": {
+    "dev": "live-server --port=3030 --open=/index.html",
+    "serve": "live-server --port=3030 --open=/index.html",
+    "build": "echo \"No build step: the site is static HTML/CSS/JS. Copy the repository contents to deploy.\""
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T01:45:15Z",
+  "title": "Design System: Sanskriti Shevgaonkar Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#101714",
+        "tonalRamp": ["#070d0a", "#1f2623", "#3a423e", "#57605c", "#77807c", "#98a19d", "#bac3bf", "#dde7e3"]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Graphite Panel",
+        "canonical": "#19231e",
+        "tonalRamp": ["#050d09", "#1d2722", "#38433d", "#55615b", "#75817a", "#95a29b", "#b8c5be", "#dbe8e1"]
+      },
+      "dossier-paper": {
+        "role": "neutral",
+        "displayName": "Dossier Paper",
+        "canonical": "#f2ead8",
+        "tonalRamp": ["#100a01", "#292316", "#463f30", "#645d4e", "#847d6c", "#a59e8d", "#c8c0af", "#ece4d2"]
+      },
+      "signal-green": {
+        "role": "primary",
+        "displayName": "Signal Green",
+        "canonical": "#a8d977",
+        "tonalRamp": ["#040f00", "#182a01", "#2d4902", "#446b08", "#608d29", "#80af4e", "#a2d371", "#c5f794"]
+      },
+      "evidence-blue": {
+        "role": "secondary",
+        "displayName": "Evidence Blue",
+        "canonical": "#8ebad0",
+        "tonalRamp": ["#000d15", "#022837", "#1b4558", "#3a6477", "#5a8499", "#7aa6bb", "#9cc8df", "#c5ebff"]
+      },
+      "rust": {
+        "role": "tertiary",
+        "displayName": "Rust",
+        "canonical": "#db6b50",
+        "tonalRamp": ["#1d0200", "#460c01", "#751901", "#9f341a", "#c4573d", "#eb795d", "#fda893", "#ffd8cc"]
+      },
+      "deep-blue": {
+        "role": "neutral",
+        "displayName": "Deep Blue",
+        "canonical": "#25495d",
+        "tonalRamp": ["#000d16", "#01283a", "#204458", "#3e6378", "#5e8399", "#7ea4bb", "#a0c7df", "#c9eafe"]
+      }
+    },
+    "shadows": [
+      {
+        "name": "hero-plate",
+        "value": "12px 14px 32px rgba(0, 0, 0, .3)",
+        "purpose": "Lift the featured virtual try-on evidence."
+      },
+      {
+        "name": "map-panel",
+        "value": "0 18px 36px rgba(0, 0, 0, .28)",
+        "purpose": "Separate the evidence index from the page."
+      },
+      {
+        "name": "case-plate",
+        "value": "8px 10px 24px rgba(0, 0, 0, .22)",
+        "purpose": "Give project evidence restrained physical depth."
+      }
+    ],
+    "motion": [
+      {
+        "name": "route-trace",
+        "value": "720ms cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Trace the selected evidence-map route."
+      },
+      {
+        "name": "control-transition",
+        "value": "180ms ease",
+        "purpose": "Provide concise hover and focus feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "576px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "992px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A high-contrast action for exploring work or contacting Sanskriti.",
+      "html": "<a class=\"ds-action\" href=\"#work\">Explore selected work</a>",
+      "css": ".ds-action { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: .7rem 1rem; border: 1px solid var(--signal); border-radius: 8px; background: var(--signal); color: var(--paper); font: 700 .92rem/1.35 'Work Sans', Arial, sans-serif; text-decoration: none; transition: background .18s ease, color .18s ease, transform .18s ease; } .ds-action:hover { transform: translateY(-1px); background: #c1ee8f; color: var(--paper); } .ds-action:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }"
+    },
+    {
+      "name": "Evidence Map Node",
+      "kind": "custom",
+      "description": "A selectable route to a real portfolio section.",
+      "html": "<a class=\"ds-map-node\" href=\"#work\"><span class=\"ds-map-topic\">Retrieval</span><span class=\"ds-map-detail\">CVE summarisation agent</span></a>",
+      "css": ".ds-map-node { display: flex; min-height: 64px; flex-direction: column; gap: .35rem; padding: .45rem .75rem; color: #edf1e9; text-align: left; text-decoration: none; } .ds-map-topic { color: #edf1e9; font: 600 1.2rem/1.1 'Alegreya', Georgia, serif; } .ds-map-detail { color: #c2cdc4; font: 400 .78rem/1.4 'Work Sans', Arial, sans-serif; } .ds-map-node:hover .ds-map-topic, .ds-map-node:focus-visible .ds-map-topic { color: #a8d977; } .ds-map-node:focus-visible { outline: 3px solid #a8d977; outline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Evidence Casebook",
+    "overview": "The portfolio is a graphite investigation console framing warm evidence plates. It blends Linux terminal cues, forensic case files, and a neural-network-inspired map, while keeping the interface grounded in real projects, experience, and writing.",
+    "keyCharacteristics": [
+      "Graphite surfaces and signal-green focus points.",
+      "Warm paper plates for project evidence and dissertation imagery.",
+      "Direct paths from work themes to real portfolio sections.",
+      "Monospace reserved for compact metadata and labels."
+    ],
+    "rules": [
+      {
+        "name": "The Evidence-First Rule",
+        "body": "Color distinguishes navigation, context, and source material; it never substitutes for the evidence itself.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do connect every map node to real project, experience, or writing evidence.",
+      "Do keep keyboard focus visible and retain the reduced-motion alternative.",
+      "Do preserve factual claims, image credits, and useful image descriptions."
+    ],
+    "donts": [
+      "Don't present the evidence map as a model architecture.",
+      "Don't invent terminal output, system status, testimonials, or performance claims.",
+      "Don't use monospace for long-form copy or add motion that competes with the work."
+    ]
+  }
+}
